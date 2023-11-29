@@ -4,5 +4,5 @@ keras
 numpy
 pandas
 Pillow
-tensorflow
+tensorflow-cpu
 Werkzeug
