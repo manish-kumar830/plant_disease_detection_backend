@@ -12,6 +12,7 @@ gast==0.5.4
 google-auth==2.23.4
 google-auth-oauthlib==1.1.0
 google-pasta==0.2.0
+gunicorn
 grpcio==1.59.3
 h5py==3.10.0
 idna==3.4
