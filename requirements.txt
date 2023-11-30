@@ -5,4 +5,4 @@ numpy
 pandas
 Pillow
 tensorflow-cpu
-Werkzeug
+Werkzeug==2.2.2
