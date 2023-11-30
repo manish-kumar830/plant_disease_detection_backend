@@ -57,8 +57,8 @@ CLASSES = ['Apple scab',
            'Tomato Yellow Leaf Curl Virus', 
            'Tomato mosaic virus', 'Tomato healthy']
 
-disease_info = pd.read_csv('disease_info.csv' , encoding='cp1252')
-supplement_info = pd.read_csv('supplement_info.csv',encoding='cp1252')
+# disease_info = pd.read_csv('disease_info.csv' , encoding='cp1252')
+# supplement_info = pd.read_csv('supplement_info.csv',encoding='cp1252')
 
 @app.route('/')
 def home():
@@ -102,21 +102,21 @@ def plantdisease():
             pred = np.argmax(result[0])
             res = CLASSES[pred]
             disease_name = res
-            description =disease_info['description'][pred]
-            prevent = disease_info['Possible Steps'][pred]
-            image_url = disease_info['image_url'][pred]
-            supplement_name = supplement_info['supplement name'][pred]
-            supplement_image_url = supplement_info['supplement image'][pred]
-            supplement_buy_link = supplement_info['buy link'][pred]
+            # description =disease_info['description'][pred]
+            # prevent = disease_info['Possible Steps'][pred]
+            # image_url = disease_info['image_url'][pred]
+            # supplement_name = supplement_info['supplement name'][pred]
+            # supplement_image_url = supplement_info['supplement image'][pred]
+            # supplement_buy_link = supplement_info['buy link'][pred]
 
     return {
-         "disease_name":disease_name,
-         "description":description,
-         "prevent":prevent,
-         "image_url":image_url,
-         "supplement_name":supplement_name,
-         "supplement_image_url":supplement_image_url,
-         "supplement_buy_link":supplement_buy_link
+         "disease_name":disease_name
+         # "description":description,
+         # "prevent":prevent,
+         # "image_url":image_url,
+         # "supplement_name":supplement_name,
+         # "supplement_image_url":supplement_image_url,
+         # "supplement_buy_link":supplement_buy_link
     }
 
 # if __name__== "__main__":
