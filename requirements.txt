@@ -4,5 +4,5 @@ keras
 numpy
 pandas
 Pillow
-tensorflow-cpu
+tensorflow
 Werkzeug==2.2.2
