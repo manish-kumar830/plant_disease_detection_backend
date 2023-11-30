@@ -99,10 +99,7 @@ def plantdisease():
             input_arr = img_to_array(imagefile)
             input_arr = np.array([input_arr])
             result = model.predict(input_arr)
-            probability_model = tensorflow.keras.Sequential([model, 
-                                         tensorflow.keras.layers.Softmax()])
-            predict = probability_model.predict(input_arr)
-            pred = np.argmax(predict[0])
+            pred = np.argmax(result[0])
             res = CLASSES[pred]
             disease_name = res
             description =disease_info['description'][pred]
